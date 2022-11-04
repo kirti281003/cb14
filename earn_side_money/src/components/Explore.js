@@ -11,7 +11,7 @@ function Explore()
         <>
         <div class="landing" id="explore">
         <div class="arrow">
-        <a href="#home"><img src={down} class="up"/></a>
+        <a href="#"><img src={down} class="up"/></a>
         </div>
         <div class="container">
            <Link to="/pending"> <Card desc="Want to get your work done??" img={boy}/></Link>

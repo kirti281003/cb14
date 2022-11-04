@@ -1,9 +1,12 @@
 
-/* .navbar, .navbar>.container, .navbar>.container-fluid {
+ .navbar, .navbar>.container, .navbar>.container-fluid {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+html,body{
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -27,7 +30,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .5rem 1rem;
-} */
+} 
 body{
   background-color: #CCCCCC;
 }
