@@ -1,6 +1,37 @@
+
+/* .navbar, .navbar>.container, .navbar>.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  position: relative;
+  padding: 37px 3rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+#home{
+  display: flex;
+  align-items: center;
+ 
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+} */
 body{
   background-color: #CCCCCC;
 }
+
 .landing{
   height:100vh;
 }
@@ -19,7 +50,7 @@ line-height: 150px;
 .explore{
   font-size: 2rem;
   width:400px;
-  border:1px solid black;
+  border:1px solid rgb(1, 1, 1);
   margin-left: auto;
   margin-right: auto;
   border-radius:20px;
@@ -55,6 +86,13 @@ line-height: 150px;
   }
   
 }
+container {
+  width: 100%;
+  padding-right: 17.5px;
+  padding-left: 17.5px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .container{
   display:flex;
   flex-direction: row;
@@ -65,6 +103,13 @@ line-height: 150px;
   margin-top:7rem;
   flex-wrap: wrap;
 
+}
+container {
+  width: 100%;
+  padding-right: 17.5px;
+  padding-left: 17.5px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .card{
     width:300px;
@@ -125,4 +170,684 @@ height:20px;
 .lefthead{
   position: absolute;
   top:8rem;
+}
+
+@media(min-width:375px){
+
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:90vh;
+    height:23rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:68vh;
+    height:15.5rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:80vh;
+    height:12rem;
+  }
+  .heading{
+    width:300px;
+  text-align: center;
+  font-size: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 2 rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+
+@media(max-width:640px){
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:65vh;
+    height:15rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:60vh;
+    height:20rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:0;
+    top:68vh;
+    height:15rem;
+  }
+  .heading{
+  width:600px;
+  text-align: center;
+  font-size: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.5rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+}
+
+@media(min-width:480px){
+
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:62vh;
+    height:1rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:50vh;
+    height:30rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:60vh;
+    height:22rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.5rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+@media(min-width:769px) and (max-width:912px){
+
+  .card{
+  width:300px;
+  height:200px;
+  background-color: #A6D1D1;
+  align-items: center;
+  margin-top:3rem;
+  
+}
+.card img{
+  width:200px;
+  height:150px;
+}
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:67vh;
+    height:15rem;
+  }
+  .rightbottomup{
+    position:absolute;
+    right:0;
+   top:200vh;
+    height:10rem;
+  }
+  .rightbottomlow{
+    position:absolute;
+    right:0;
+    top:260vh;
+    height:5rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:65vh;
+    height:20rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:74vh;
+    height:20rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 6.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.4rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+@media(min-width:1200px){
+
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:52vh;
+    height:25rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:50vh;
+    height:30rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:60vh;
+    height:22rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160px;
+  }
+  .explore{
+    font-size: 2.1rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+@media(min-width:769px) and (max-width:912px){
+
+  .card{
+    width:300px;
+    height:200px;
+   background-color: #A6D1D1;
+   align-items: center;
+   margin-top:3rem;
+  
+}
+.card img{
+  width:200px;
+  height:150px;
+}
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:67vh;
+    height:15rem;
+  }
+  .rightbottomup{
+    position:absolute;
+    right:0;
+   top:200vh;
+    height:10rem;
+  }
+  .rightbottomlow{
+    position:absolute;
+    right:0;
+    top:260vh;
+    height:5rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:65vh;
+    height:20rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:74vh;
+    height:20rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 6.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.4rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+@media(max-width:990px){
+
+  .card{
+    width:300px;
+    height:200px;
+   background-color: #A6D1D1;
+   align-items: center;
+   margin-top:3rem;
+  
+}
+.card img{
+  width:200px;
+  height:150px;
+}
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:67vh;
+    height:15rem;
+  }
+  .rightbottomup{
+    position:absolute;
+    right:0;
+   top:200vh;
+    height:10rem;
+  }
+  .rightbottomlow{
+    position:absolute;
+    right:0;
+    top:260vh;
+    height:5rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:65vh;
+    height:20rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:74vh;
+    height:20rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 6.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.4rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+@media(min-width:990px){
+
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:62vh;
+    height:20rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:50vh;
+    height:30rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:60vh;
+    height:22rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.5rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+@media(max-width:990px){
+
+  .card{
+    width:300px;
+    height:200px;
+   background-color: #A6D1D1;
+   align-items: center;
+   margin-top:3rem;
+  
+}
+.card img{
+  width:200px;
+  height:150px;
+}
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:67vh;
+    height:15rem;
+  }
+  .rightbottomup{
+    position:absolute;
+    right:0;
+   top:200vh;
+    height:10rem;
+  }
+  .rightbottomlow{
+    position:absolute;
+    right:0;
+    top:260vh;
+    height:5rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:65vh;
+    height:20rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:74vh;
+    height:20rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 6.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.4rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+@media(min-width:990px){
+
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:62vh;
+    height:20rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:50vh;
+    height:30rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:60vh;
+    height:22rem;
+  }
+  .heading{
+    width:600px;
+  text-align: center;
+  font-size: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1.5rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+
+@media(min-width:376px) and (max-width:480px){
+
+  .rightbottom{
+    position:absolute;
+    right:0;
+    top:67vh;
+    height:15rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:68vh;
+    height:18.5rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:80vh;
+    height:12rem;
+  }
+  .rightbottomup{
+    position:absolute;
+    right:0;
+   top:203vh;
+    height:20rem;
+  }
+  .rightbottomlow{
+    position:absolute;
+    right:0;
+    top:211vh;
+    height:15rem;
+  }
+  .heading{
+    width:300px;
+  text-align: center;
+  font-size: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 1 rem;
+    width:400px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+
+@media(max-width:375px){
+
+  .card{
+    width:300px;
+    height:100px;
+   background-color: #A6D1D1;
+   align-items: center;
+   margin-top:3rem;
+  
+}
+.card img{
+  width:50px;
+  height:50px;
+}
+.rightbottomup{
+  position:absolute;
+  right:0;
+ top:216vh;
+  height:10rem;
+}
+.rightbottomlow{
+  position:absolute;
+  right:0;
+  top:225vh;
+  height:7.5rem;
+}
+  .rightbottom{
+    position:absolute;
+    right:-8px;
+    top:75vh;
+    height:9rem;
+  }
+  .leftbottomup{
+    position:absolute;
+    left:0;
+    top:75vh;
+    height:15.5rem;
+  }
+  .leftbottomlow{
+    position:absolute;
+    left:2px;
+    top:80vh;
+    height:12rem;
+  }
+  .heading{
+    width:300px;
+  text-align: center;
+  font-size: 3.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  }
+  .explore{
+    font-size: 0.5 rem;
+    width:275px;
+    border:1px solid rgb(1, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    text-align: center;
+  }
+ 
+}
+
+
+@media (min-width: 992px) {
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+}
+@media (max-width: 991.98px){
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
 }
