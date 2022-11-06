@@ -1,6 +1,40 @@
+
+ .navbar, .navbar>.container, .navbar>.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+html,body{
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: relative;
+  padding: 37px 3rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+#home{
+  display: flex;
+  align-items: center;
+ 
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+} 
 body{
   background-color: #CCCCCC;
 }
+
 .landing{
   height:100vh;
 }
@@ -34,7 +68,7 @@ line-height: 150px;
 .explore{
   font-size: 2rem;
   width:400px;
-  border:1px solid black;
+  border:1px solid rgb(1, 1, 1);
   margin-left: auto;
   margin-right: auto;
   border-radius:20px;
@@ -70,6 +104,13 @@ line-height: 150px;
   }
   
 }
+container {
+  width: 100%;
+  padding-right: 17.5px;
+  padding-left: 17.5px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .container{
   display:flex;
   flex-direction: row;
@@ -81,6 +122,13 @@ line-height: 150px;
   flex-wrap: wrap;
   position: absolute;
   left: 300px;
+}
+container {
+  width: 100%;
+  padding-right: 17.5px;
+  padding-left: 17.5px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .card{
     width:300px;
