@@ -7,9 +7,9 @@ position: absolute;
 width:40vw;
 text-align: center;
 height: 253px;
-left: 480px;
+left: 500px;
 top: 300px;
-text-align: center;
+
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
@@ -25,7 +25,7 @@ height: 118px;
 
 position: absolute;
 top:9rem;
-font-family: 'Bebas Neue';
+font-family: 'Bebas Neue', cursive;
 font-style: normal;
 font-weight: 400;
 font-size: 98.5047px;
@@ -34,7 +34,230 @@ line-height: 118px;
 color: #000000;
 
 }
+.right{
+  height:50px;
+  animation: move 1s infinite;}
+.left{
+  height:50px;
+  animation: move 1s infinite;}
+.rightbottomdown{
+    position:absolute;
+    right:0;
+    top:50vh;
+    height:30rem;
+  }
+.leftbottomdown{
+    position:absolute;
+    left:0;
+    top:55vh;
+    height:30rem;
+  }
+@media(min-width: 1200px){
+    
+}
+@media(max-width: 990px){
+    .App h2{
+        font-size: 60.5047px;
+        line-height: 108px;
 
+    }
+    .aboutcontent{
+        height: 200px;
+        font-size: 13.1796px;
+        line-height: 18px;
+        left: 280px;
+        top: 250px;
+    }
+    .leftbottomdown{
+      top:55vh;
+    height:30rem;
+    width: 420px;
+    }
+    .rightbottomdown{
+      top:55vh;
+    height:30rem;
+    width: 420px;
+    }
 
+  }
+@media(max-width: 850px){
+  .App h2{
+    font-size: 57.5047px;
+    line-height: 108px;
 
+}
+.aboutcontent{
+    height: 200px;
+    font-size: 13.1796px;
+    line-height: 18px;
+    left: 250px;
+    top: 250px;
+}
+.leftbottomdown{
+  top:53vh;
+height:30rem;
+width: 400px;
+}
+.rightbottomdown{
+  top:53vh;
+height:30rem;
+width: 400px;
+}
+    
+  }
+@media(max-width: 760px){
+  .App h2{
+    font-size: 54.5047px;
+    line-height: 108px;
 
+}
+.aboutcontent{
+    height: 200px;
+    font-size: 13.1796px;
+    line-height: 18px;
+    left: 220px;
+    top: 250px;
+}
+.leftbottomdown{
+  top:60vh;
+height:29rem;
+width: 380px;
+}
+.rightbottomdown{
+  top:60vh;
+height:29rem;
+width: 380px;
+}
+  }
+@media(max-width: 670px){
+  .App h2{
+    font-size: 52.5047px;
+    line-height: 105px;
+
+}
+.aboutcontent{
+    height: 200px;
+    font-size: 12.1796px;
+    line-height: 18px;
+    left: 200px;
+    top: 250px;
+}
+.leftbottomdown{
+  top:65vh;
+height:29rem;
+width: 370px;
+}
+.rightbottomdown{
+  top:65vh;
+height:29rem;
+width: 370px;
+}
+  }
+  @media(max-width: 608px){
+    .App h2{
+      font-size: 48.5047px;
+      line-height: 105px;
+  
+  }
+  .aboutcontent{
+      height: 200px;
+      font-size: 12.1796px;
+      line-height: 16px;
+      left: 190px;
+      top: 250px;
+  }
+  .leftbottomdown{
+    top:67vh;
+  height:29rem;
+  width: 360px;
+  }
+  .rightbottomdown{
+    top:67vh;
+  height:29rem;
+  width: 360px;
+  }  
+    }
+  @media(max-width: 575px){
+  .App h2{
+    font-size: 45.5047px;
+    line-height: 105px;
+    
+  }
+  .aboutcontent{
+    height: 200px;
+    font-size: 12px;
+    line-height: 16px;
+    left: 180px;
+    top: 250px;
+  }
+  }
+  @media(max-width: 560px){
+  .App h2{
+    font-size: 42.5047px;
+    line-height: 105px;}
+  .aboutcontent{
+    height: 200px;
+    font-size: 11.75px;
+    line-height: 16px;
+    left: 155px;
+    top: 250px;
+  }
+  .leftbottomdown{
+    top:70vh;
+  height:28rem;
+  width: 340px;
+  }
+  .rightbottomdown{
+    top:70vh;
+  height:28rem;
+  width: 340px;
+  }
+  }
+  @media(max-width: 490px){
+    .App h2{
+      font-size: 41.5047px;
+      line-height: 105px;
+  
+  }
+  .aboutcontent{
+      height: 200px;
+      font-size: 11.45px;
+      line-height: 16px;
+      left: 145px;
+      top: 250px;
+  }
+  .leftbottomdown{
+    top:70vh;
+  height:29rem;
+  width: 300px;
+  }
+  .rightbottomdown{
+    top:70vh;
+  height:29rem;
+  width: 300px;
+  }
+}
+@media(max-width: 440px){
+  .App h2{
+    font-size: 36.5047px;
+    line-height: 90px;
+
+}
+.aboutcontent{
+    height: 180px;
+    font-size: 10.45px;
+    line-height: 15px;
+    left: 125px;
+    top: 250px;
+}
+.leftbottomdown{
+  top:75vh;
+height:27rem;
+width: 280px;
+}
+.rightbottomdown{
+  top:75vh;
+height:27rem;
+width: 250px;
+}
+}
