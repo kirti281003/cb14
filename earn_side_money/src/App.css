@@ -192,6 +192,7 @@ height:20px;
   position: absolute;
   top:8rem;
 }
+
 @media(min-width: 1200px){}
 @media(max-width: 1100px){
   .footer{
@@ -242,12 +243,24 @@ height:20px;
   }
 }
 @media(max-width: 860px){
+  .footer{
+    width:200px;
+    height:50px;}
   .lefthead{
     left: 100px;
     font-size: 54px;
   }
   .container{
     left: 70px;
+  }
+  .card{
+    width:200px;
+    height:220px;
+  }
+  .card img{
+  width:170px;
+  height:180px;
+  margin-top: 10px;
   }
 }
 @media(max-width: 800px){
@@ -320,23 +333,24 @@ margin-top: 10px;
   height:150px;
   margin-top: 10px;
   }}
-  @media(max-width: 460px){
+  @media(max-width: 440px){
     .footer{
-      width:150px;
+      width:140px;
       height:40px;}
     .lefthead{
-      left: 50px;
+      left: 40px;
       font-size: 36px;  
     }
     .container{
-      left: 10px;
+      left: 5px;
     }
     .card{
-      width:150px;
+      width:140px;
       height:180px;
     }
     .card img{
-    width:130px;
+    width:120px;
     height:140px;
     margin-top: 10px;
     }}
+  

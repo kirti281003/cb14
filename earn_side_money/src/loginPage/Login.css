@@ -93,3 +93,12 @@
     width: 300px;
   }
 }
+@media(max-width: 350px){
+  .Auth-form-container{
+    width: 100vw;
+    height: 100vh;
+  }
+  .Auth-form{
+    width: 225px;
+  }
+}
