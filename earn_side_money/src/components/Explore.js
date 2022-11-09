@@ -9,7 +9,7 @@ function Explore()
 {
     return(
         <>
-        <div class="landing" id="explore">
+        <div class="menu" id="explore">
         <div class="arrow">
         <a href="#"><img src={down} class="up"/></a>
         </div>

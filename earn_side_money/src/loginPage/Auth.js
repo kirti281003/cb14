@@ -64,7 +64,7 @@ export default function (props) {
     )
   }
 
-  return (
+  return (<>
     <div className="Auth-form-container">
       <form className="Auth-form">
         <div className="Auth-form-content">
@@ -126,13 +126,10 @@ export default function (props) {
           </div>
         </div>
       </form>
-      <div className="vector1">
-        <img src={pic1}/>
-      </div>
-      <div className="vector2">
-        <img src={pic2}/>
-      </div>
+     
     </div>
+    
+      </>
   )
 }
 

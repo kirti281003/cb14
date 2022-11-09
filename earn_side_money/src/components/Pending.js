@@ -1,5 +1,6 @@
 import Content from "./Contentcard.js";
-function Freelancing()
+import "./Freelancing.css";
+function Pending()
 {
     return(
         <>
@@ -21,4 +22,4 @@ function Freelancing()
         </>
     )
 }
-export default Freelancing;
+export default Pending;

@@ -1,0 +1,17 @@
+.lefthead{
+    position: absolute;
+    top:8rem;
+  }
+  @media (max-width:1024px)
+  {
+    .lefthead{
+        position: absolute;
+        top:8rem;
+        font-size: 2rem;
+        text-align:center;
+   
+      }
+      .container{
+        margin-top:10rem;
+      }
+  }

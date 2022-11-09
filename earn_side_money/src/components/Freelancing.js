@@ -1,4 +1,6 @@
 import Card from "./Card.js";
+import "./Card.css";
+import "./Freelancing.css";
 function Freelancing()
 {
     return(

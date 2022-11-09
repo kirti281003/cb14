@@ -1,7 +1,6 @@
 import Auth from './Auth'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import "./Login.css"
-import tree from "../images/Grow your money.png"
 
 function Login() {
     return (
@@ -14,4 +13,3 @@ function Login() {
   }
   
   export default Login
-  

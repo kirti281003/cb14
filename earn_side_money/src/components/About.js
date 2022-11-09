@@ -1,13 +1,10 @@
 import "./About.css";
-import right from "../images/Right.png";
-import left from "../images/Left.png";
-
 
 import React from 'react'
 const About = () => {
 
   return (
-    <div className="App">
+    <div className="about">
       <h2>ABOUT</h2>
       <p class="aboutcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
        maxime harum maiores aliquid nisi illum quae eligendi amet numquam officia consectetur a distinctio
@@ -16,9 +13,6 @@ const About = () => {
           amet modi, animi, dolor quisquam! In, mollitia voluptates! Dolorum doloribus explicabo saepe illo ad. 
           Perferendis esse harum aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto sint, iure,
            voluptas dolores, tempora necessitatibus deleniti.</p>
-           <img src={right} class="rightbottomdown"></img>
-           <img src={left} class="leftbottomdown"></img>
-           
     </div>
     
   );
