@@ -1,4 +1,6 @@
 import "./About.css";
+import right from "../images/Right.png";
+import left from "../images/Left.png";
 
 import React from 'react'
 const About = () => {
@@ -13,6 +15,8 @@ const About = () => {
           amet modi, animi, dolor quisquam! In, mollitia voluptates! Dolorum doloribus explicabo saepe illo ad. 
           Perferendis esse harum aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto sint, iure,
            voluptas dolores, tempora necessitatibus deleniti.</p>
+    <img src={right} class="rightbottomdown"></img>
+          <img src={left} class="leftbottomdown"></img>
     </div>
     
   );
