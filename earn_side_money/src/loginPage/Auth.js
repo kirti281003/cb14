@@ -10,7 +10,7 @@ export default function (props) {
 
   let [authMode, setAuthMode] = useState("signin");
   const[user,setUser]=useState({
-    name:"",email:"",password:""
+    name:"",username:"",email:"",password:""
   });
   let name,value;
   const handleinput=(e)=>{
@@ -22,19 +22,19 @@ export default function (props) {
   }
   const postData=async(e)=>{
     e.preventDefault();
-    const{name,email,password}=user;
+    const{name,username,email,password}=user;
    const res=await fetch("/signup",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"
     },
     body:JSON.stringify({
-      name:name,email:email,password:password
+      name:name,username:username,email:email,password:password
     })
 
    });
    const response=await res.json();
-   if(response.status===422 )
+   if(res.status===422 )
    {
     window.alert("Inavlid");
     console.log("Invalid");
@@ -42,6 +42,7 @@ export default function (props) {
    else{
     window.alert("Success");
     console.log("Success");
+    
 
 
    }
@@ -74,8 +75,12 @@ export default function (props) {
     })
 
    });
-   const response=await res.json();
-   if(response.status===422 )
+    const response=await res.json();
+    console.log(response.id);
+    const id=response.id;
+    console.log(res.status);
+    console.log(res);
+   if(res.status===422)
    {
     window.alert("Inavlid");
     console.log("Invalid");
@@ -83,7 +88,7 @@ export default function (props) {
    else{
     window.alert("Success");
     console.log("Success");
-
+    window.location.href="/:"+{id};
 
    }
 
@@ -182,6 +187,19 @@ export default function (props) {
               name="name"
               autoComplete="off"
               value={user.name}
+              onChange={handleinput}
+            />
+          </div>
+          <div className="form-group mt-3">
+            <label>Username</label>
+            <input
+              type="text"
+              id="username"
+              className="form-control mt-1"
+              placeholder="e.g Tanisha Kindo"
+              name="username"
+              autoComplete="off"
+              value={user.username}
               onChange={handleinput}
             />
           </div>
