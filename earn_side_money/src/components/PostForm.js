@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {useState} from "react";
 import {useParams} from "react-router-dom";
+import Navbar from "./Navbar";
 
 function PostForm()
 {const {id,token}=useParams();
@@ -46,6 +47,7 @@ console.log(token);
       }
     return(
         <>
+               <Navbar home="" about="" signin="" hometitle="" abouttitle="" signintitle="Logout"/>
              <div className="Auth-form-container">
         <form className="Auth-form">
           <div className="Auth-form-content">

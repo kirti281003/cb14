@@ -3,10 +3,12 @@ import money from "../images/money 1.png";
 import up from "../images/Vector.png";
 import low from "../images/Vector (1).png";
 import Explore from "./Explore";
+import Navbar from "./Navbar.js";
 function Landing()
 {
 return(
     <>
+    <Navbar home="" about="about" signin="login" hometitle="Home" abouttitle="About" signintitle="SignIn/SignUp"/>
     <div class="landing" >
         <div class="heading">
             <p>Earn Side Money</p>

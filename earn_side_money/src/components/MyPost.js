@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Freelancing.css";
 import {useParams} from "react-router-dom";
+import Navbar from "./Navbar.js";
 function MyPost()
 { 
     const {id,token}=useParams();
@@ -26,6 +27,7 @@ function MyPost()
     
     return(
          <>
+                <Navbar home="" about="" signin="" hometitle="" abouttitle="" signintitle="Logout"/>
             <h1> MY POSTS</h1>
             <div class="container">
             {mypost.map(mypost => (

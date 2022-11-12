@@ -4,6 +4,7 @@ import GoogleLogin from "react-google-login"
 import pic1 from "../images/BlueVector1.png"
 import pic2 from "../images/BlueVector2.png"
 import Axios from "axios";
+import Navbar from "../components/Navbar";
 
 
 export default function (props) {
@@ -103,7 +104,8 @@ export default function (props) {
   }
 
   if (authMode === "signin") {
-    return (
+    return (<>
+      <Navbar home="" about="about" signin="login" hometitle="Home" abouttitle="About" signintitle="SignIn/SignUp"/>
       <div className="Auth-form-container">
         <form className="Auth-form">
           <div className="Auth-form-content">
@@ -158,11 +160,13 @@ export default function (props) {
           </div>
         </form>
       </div>
+      </>
     )
   }
 
 
   return (<>
+    <Navbar home="" about="about" signin="login" hometitle="Home" abouttitle="About" signintitle="SignIn/SignUp"/>
     <div className="Auth-form-container">
       <form className="Auth-form" method="POST">
         <div className="Auth-form-content">

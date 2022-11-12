@@ -1,11 +1,14 @@
 import "./About.css";
 import right from "../images/Right.png";
 import left from "../images/Left.png";
+import Navbar from "./Navbar";
 
 import React from 'react'
 const About = () => {
 
   return (
+    <>
+    <Navbar home="" about="about" signin="login" hometitle="Home" abouttitle="About" signintitle="SignIn/SignUp"/>
     <div className="about">
       <h2>ABOUT</h2>
       <p class="aboutcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
@@ -18,6 +21,7 @@ const About = () => {
     <img src={right} class="rightbottomdown"></img>
           <img src={left} class="leftbottomdown"></img>
     </div>
+    </>
     
   );
 }

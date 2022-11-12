@@ -17,7 +17,6 @@ function App() {
   return (
     <>
    <BrowserRouter>
-    <Navbar />
       <Routes>
           <Route index element={<Landing/>} />
           <Route path="explore" element={<Explore/>}/>

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import logo from "../images/blue_logo 1.png";
-function Navbar()
+function Navbar(props)
 {
     return(
         <>
@@ -12,14 +12,14 @@ function Navbar()
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item me-5">
-        <Link to="/" class="navigation nav-link">Home</Link>
+        <Link to={"/"+props.home} class="navigation nav-link">{props.hometitle}</Link>
         </li>
         <li class="nav-item me-5">
-        <Link to="/about" class="navigation nav-link">About</Link>
+        <Link to={"/"+props.about} class="navigation nav-link">{props.abouttitle}</Link>
         
         </li>
         <li class="nav-item me-5">
-        <Link to="/login" class="navigation nav-link">Login/Sign Up</Link>
+        <Link to={"/"+props.signin}  class="navigation nav-link">{props.signintitle}</Link>
        
         </li>
      
