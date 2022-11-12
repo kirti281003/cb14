@@ -78,17 +78,20 @@ export default function (props) {
     const response=await res.json();
     console.log(response.id);
     const id=response.id;
+    const token=response.token;
     console.log(res.status);
-    console.log(res);
+    console.log(response);
    if(res.status===422)
    {
     window.alert("Inavlid");
     console.log("Invalid");
    }
    else{
-    window.alert("Success");
     console.log("Success");
-    window.location.href="/:"+{id};
+    console.log(id);
+    window.alert("Success");
+ 
+    window.location.href="/user/"+id+"/"+token;
 
    }
 

@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar.js";
 import "./loginPage/Login.css";
 import Freelancing from "./components/Freelancing.js";
 import Pending from "./components/Pending.js";
+import User from "./components/User.js";
+import PostForm from './components/PostForm';
+import MyPost from './components/MyPost';
 
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
           <Route path="login" element={<Login/>}/>
           <Route path="freelancing" element={<Freelancing/>}/>
           <Route path="pending" element={<Pending/>}/>
+          <Route path="user/:id/:token" element={<User/>}/>
+          <Route path="createpost/:id/:token" element={<PostForm/>}/>
+          <Route path="mypost/:id/:token" element={<MyPost/>}/>
          
       </Routes>
     </BrowserRouter>

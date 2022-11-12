@@ -6,7 +6,7 @@ function Content(props)
              <h1>{props.heading}</h1>
                 <p>{props.content}</p>
                 <div class="footer">
-                    <p>Accept</p>
+                    <p>{props.name}</p>
                 </div>
             </div>
         </>

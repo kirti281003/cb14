@@ -1,25 +1,29 @@
 import Content from "./Contentcard.js";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./Freelancing.css";
 function Pending()
-{
-    return(
+{ const [post, setPost] = useState([]);
+    const fetchData = () => {
+        return axios.get("/allpost")
+              .then((response) => 
+              setPost(response.data.posts));}
+              
+    
+      useEffect(() => {
+        fetchData();
+      },[]);
+     return(
         <>
-            <h1 class="lefthead">Pending Work</h1>
-           <div class="container">
-            <Content heading="Category" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
-       maxime harum maiores aliquid nisi illum quae eligendi."/>
-        <Content heading="Category" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
-       maxime harum maiores aliquid nisi illum quae eligendi "/>
-        <Content heading="Category" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
-       maxime harum maiores aliquid nisi illum quae eligendi "/>
-        <Content heading="Category" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
-       maxime harum maiores aliquid nisi illum quae eligendi"/>
-        <Content heading="Category" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
-       maxime harum maiores aliquid nisi illum quae eligendi "/>
-        <Content heading="Category" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo,
-       maxime harum maiores aliquid nisi illum quae eligendi ."/>
-           </div>
+            <h1> Pending Request</h1>
+            <div class="container">
+            {post.map(post => (
+    <Content heading={post.category} content={post.body} name={post.postedBy}/>
+    ))}
+    </div>
         </>
-    )
+     )
+
+
 }
 export default Pending;
