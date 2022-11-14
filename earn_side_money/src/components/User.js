@@ -3,6 +3,9 @@ import Card from "./Card";
 import {Link} from "react-router-dom";
 import boy from "../images/boy sitting at the desk with open book.png";
 import Navbar from "./Navbar";
+import "./About.css";
+import right from "../images/Right.png";
+import left from "../images/Left.png";
 function User()
 { const {id,token}=useParams();
 console.log({id})
@@ -19,7 +22,8 @@ console.log({id})
         </div>
       
         </div>
-
+        <img src={right} class="rightbottomdown"></img>
+          <img src={left} class="leftbottomdown"></img>
         </>
     )
 }

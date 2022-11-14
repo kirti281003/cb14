@@ -4,6 +4,9 @@ import axios from "axios";
 import "./Freelancing.css";
 import {useParams} from "react-router-dom";
 import Navbar from "./Navbar.js";
+import right from "../images/Right.png";
+import left from "../images/Left.png";
+import "./About.css";
 function MyPost()
 { 
     const {id,token}=useParams();
@@ -34,6 +37,8 @@ function MyPost()
     <Content heading={mypost.category} content={mypost.body} name={mypost.postedBy}/>
     ))}
     </div>
+    <img src={right} class="rightbottomdown"></img>
+          <img src={left} class="leftbottomdown"></img>
 
         </>
     )

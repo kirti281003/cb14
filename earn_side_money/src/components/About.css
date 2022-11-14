@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas Neue');
 html,body{
   overflow-x: hidden;
+  z-index:1;
 }
 .aboutcontent{
 position: absolute;
@@ -46,12 +47,14 @@ color: #000000;
     right:0;
     top:50vh;
     height:30rem;
+    z-index:-1;
   }
 .leftbottomdown{
     position:absolute;
     left:0;
     top:55vh;
     height:30rem;
+    z-index:-1;
   }
 @media(min-width: 1400px){
     
@@ -347,4 +350,12 @@ width: 200px;
 }}
 
 
-
+@media (max-width:1023px)
+{
+  .leftbottomdown{
+    display: none;
+  }
+  .rightbottomdown{
+    display: none;
+  }
+}
